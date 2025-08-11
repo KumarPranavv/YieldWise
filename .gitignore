@@ -1,0 +1,13 @@
+# Python Virtual Environment
+# This is the most important line. Never commit your venv folder.
+myenv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# macOS specific files
+.DS_Store
+
+# VS Code specific folder
+.vscode/
