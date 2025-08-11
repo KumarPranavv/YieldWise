@@ -29,39 +29,30 @@ This project moves beyond simple monitoring by providing a **predictive decision
 ---
 
 ## 📂 Project Structure
-
 The project follows a professional and modular structure to ensure maintainability and scalability.
-YieldWise/
-|
-├── data/
-│   ├── train.csv         # Training Dataset
-│   └── test.csv          # Testing Dataset
-|
-├── docs/
-│   └── README.md         # Project Documentation (This File)
-|
-├── models/
-│   └── grain_predictor_pipeline.joblib  # Trained Model File
-|
-├── notebooks/
-│   └── EDA.ipynb         # Exploratory Data Analysis Notebook
-|
-├── output/
-│   └── metrics.json      # Saved Model Performance Metrics
-|
-├── src/
-│   ├── init.py
-│   ├── data_preprocessing.py
-│   ├── generate_dataset.py
-│   ├── model_utils.py
-│   ├── train.py          # Main Training Script
-│   ├── evaluate.py
-│   └── predict.py        # Inference Script
-|
-├── main.py               # Main Streamlit Application Script
-├── .gitignore
-└── requirements.txt      # Project Dependencies
 
+* **`YieldWise/`**
+    * **`data/`**: Contains the training and testing datasets.
+        * `train.csv`
+        * `test.csv`
+    * **`docs/`**: Holds all documentation files.
+        * `README.md`
+    * **`models/`**: Stores the trained machine learning model.
+        * `grain_predictor_pipeline.joblib`
+    * **`notebooks/`**: Contains the Jupyter Notebook for data analysis.
+        * `EDA.ipynb`
+    * **`output/`**: Stores generated files like model metrics.
+        * `metrics.json`
+    * **`src/`**: Contains all source code for the project.
+        * `data_preprocessing.py`
+        * `generate_dataset.py`
+        * `model_utils.py`
+        * `train.py` (Main Training Script)
+        * `evaluate.py`
+        * `predict.py` (Inference Script)
+    * **`main.py`**: The main script to launch the Streamlit web application.
+    * **`.gitignore`**: Specifies files and folders for Git to ignore.
+    * **`requirements.txt`**: Lists all project dependencies.
 
 ---
 
