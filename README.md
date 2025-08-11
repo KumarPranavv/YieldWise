@@ -7,6 +7,24 @@ YieldWise is an end-to-end data science application designed to optimize grain s
 This project moves beyond simple monitoring by providing a **predictive decision-support system**. It quantifies the complex relationship between environmental conditions and grain degradation, enabling users to perform "what-if" analysis and make informed, strategic decisions.
 
 ---
+## 🏗️ System Architecture
+
+Below is the high-level architecture of the YieldWise application, from data generation to the interactive user interface.
+
+![System Architecture Diagram](diagram.png)
+
+---
+
+## 📋 Project Workflow
+
+The project follows a standard machine learning lifecycle:
+
+1.  **Data Generation:** A synthetic dataset is created using `src/generate_dataset.py`, simulating real-world relationships between environmental factors and grain spoilage.
+2.  **Model Training:** The `src/train.py` script uses the training data (`data/train.csv`) to train a Gradient Boosting Regressor model. The trained pipeline is then saved.
+3.  **Model Evaluation:** The model's performance is rigorously evaluated against unseen test data (`data/test.csv`) using metrics like R², MAE, and a visual "Predictions vs. Actuals" plot.
+4.  **Interactive Prediction:** The final, trained model is served through an interactive Streamlit application (`main.py`), allowing users to input live data and receive real-time storage forecasts and what-if analysis.
+
+___
 
 ## 🚀 Key Features
 
